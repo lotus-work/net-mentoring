@@ -1,0 +1,48 @@
+2025-07-05 19:53:21.671 +05:30 [INF] User profile is available. Using 'C:\Users\lotus_biswas\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-05 19:53:22.244 +05:30 [INF] Entity Framework Core 3.0.1 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=InMemoryDb 
+2025-07-05 19:53:22.559 +05:30 [INF] Saved 2 entities to in-memory store.
+2025-07-05 19:53:22.692 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-05 19:53:22.692 +05:30 [INF] Hosting environment: Development
+2025-07-05 19:53:22.692 +05:30 [INF] Content root path: C:\Users\lotus_biswas\Documents\net-mentoring\09-Logging\BrainstormSessions
+2025-07-05 19:53:22.735 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:65526/  
+2025-07-05 19:53:22.780 +05:30 [INF] Executing endpoint 'BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions)'
+2025-07-05 19:53:22.810 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller BrainstormSessions.Controllers.HomeController (BrainstormSessions).
+2025-07-05 19:53:22.842 +05:30 [INF] Entity Framework Core 3.0.1 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=InMemoryDb 
+2025-07-05 19:53:22.861 +05:30 [INF] Test log entry of Information level.
+2025-07-05 19:53:22.874 +05:30 [INF] Executing ViewResult, running view Index.
+2025-07-05 19:53:23.078 +05:30 [INF] Executed ViewResult - view Index executed in 202.534ms.
+2025-07-05 19:53:23.080 +05:30 [INF] Executed action BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions) in 268.4159ms
+2025-07-05 19:53:23.080 +05:30 [INF] Executed endpoint 'BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions)'
+2025-07-05 19:53:23.083 +05:30 [INF] Request finished in 353.5681ms 200 text/html; charset=utf-8
+2025-07-05 19:53:27.844 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:65526/ application/x-www-form-urlencoded 32
+2025-07-05 19:53:27.845 +05:30 [INF] Executing endpoint 'BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions)'
+2025-07-05 19:53:27.859 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(NewSessionModel) on controller BrainstormSessions.Controllers.HomeController (BrainstormSessions).
+2025-07-05 19:53:27.886 +05:30 [INF] Entity Framework Core 3.0.1 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=InMemoryDb 
+2025-07-05 19:53:27.887 +05:30 [INF] Saved 1 entities to in-memory store.
+2025-07-05 19:53:27.888 +05:30 [INF] Executing RedirectResult, redirecting to /.
+2025-07-05 19:53:27.888 +05:30 [INF] Executed action BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions) in 29.427ms
+2025-07-05 19:53:27.888 +05:30 [INF] Executed endpoint 'BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions)'
+2025-07-05 19:53:27.890 +05:30 [INF] Request finished in 45.9391ms 302 
+2025-07-05 19:53:27.893 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:65526/  
+2025-07-05 19:53:27.893 +05:30 [INF] Executing endpoint 'BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions)'
+2025-07-05 19:53:27.894 +05:30 [INF] Route matched with {action = "Index", controller = "Home"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index() on controller BrainstormSessions.Controllers.HomeController (BrainstormSessions).
+2025-07-05 19:53:27.895 +05:30 [INF] Entity Framework Core 3.0.1 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=InMemoryDb 
+2025-07-05 19:53:27.897 +05:30 [INF] Test log entry of Information level.
+2025-07-05 19:53:27.898 +05:30 [INF] Executing ViewResult, running view Index.
+2025-07-05 19:53:27.902 +05:30 [INF] Executed ViewResult - view Index executed in 4.2331ms.
+2025-07-05 19:53:27.902 +05:30 [INF] Executed action BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions) in 8.0232ms
+2025-07-05 19:53:27.902 +05:30 [INF] Executed endpoint 'BrainstormSessions.Controllers.HomeController.Index (BrainstormSessions)'
+2025-07-05 19:53:27.902 +05:30 [INF] Request finished in 8.7694ms 200 text/html; charset=utf-8
+2025-07-05 19:53:28.898 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:65526/Session/Index/1  
+2025-07-05 19:53:28.902 +05:30 [INF] Executing endpoint 'BrainstormSessions.Controllers.SessionController.Index (BrainstormSessions)'
+2025-07-05 19:53:28.906 +05:30 [INF] Route matched with {action = "Index", controller = "Session"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.Nullable`1[System.Int32]) on controller BrainstormSessions.Controllers.SessionController (BrainstormSessions).
+2025-07-05 19:53:28.908 +05:30 [INF] Entity Framework Core 3.0.1 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=InMemoryDb 
+2025-07-05 19:53:28.926 +05:30 [INF] Executing ViewResult, running view Index.
+2025-07-05 19:53:28.932 +05:30 [INF] Executed ViewResult - view Index executed in 6.2965ms.
+2025-07-05 19:53:28.932 +05:30 [INF] Executed action BrainstormSessions.Controllers.SessionController.Index (BrainstormSessions) in 25.9385ms
+2025-07-05 19:53:28.932 +05:30 [INF] Executed endpoint 'BrainstormSessions.Controllers.SessionController.Index (BrainstormSessions)'
+2025-07-05 19:53:28.932 +05:30 [INF] Request finished in 36.4627ms 200 text/html; charset=utf-8
+2025-07-05 19:53:28.969 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:65526/api/ideas/forsession/1  
+2025-07-05 19:53:28.971 +05:30 [INF] Request finished in 2.0261ms 404 
+2025-07-05 19:53:36.691 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:65526/api/ideas/create application/json 47
+2025-07-05 19:53:36.693 +05:30 [INF] Request finished in 2.4113ms 404 
