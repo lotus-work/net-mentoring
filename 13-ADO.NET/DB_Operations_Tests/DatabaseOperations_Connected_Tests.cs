@@ -1,4 +1,4 @@
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using DB_Operations;
 using DB_Operations.Models;
 using System;
@@ -13,7 +13,7 @@ namespace DB_Operations_Tests
         [SetUp]
         public void Setup()
         {
-            _connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ADONET_Testing;Integrated Security=True;";
+          _connectionString = @"Data Source=EPINHYDW05EF\SQLEXPRESS;Initial Catalog=ADONET_Testing;Integrated Security=True;";
             _dbOperations = new DatabaseOperations_Connected(_connectionString);
         }
 
@@ -62,16 +62,20 @@ namespace DB_Operations_Tests
         {
             // arrange
             // The test uses the known value of the second row of the database which was filled by post-deplyment script.
-            var orderNumber = 2;
+            var orderNumber = 3;
             var newStatus = OrderStatus.Done;
             var now = DateTime.Now;
             var expected = new OrderModel()
             {
                 Status = newStatus,
-                CreatedDate = new DateTime(2020, 2, 3),
+                CreatedDate = new DateTime(2020, 2, 1),
                 UpdatedDate = new DateTime(now.Year, now.Month, now.Day), // rounding
-                ProductId = 2
+                ProductId = 3
             };
+
+            var existingOrder = _dbOperations.ReadOrder(orderNumber);
+            Assert.IsNotNull(existingOrder, $"Order with ID = {orderNumber} does not exist.");
+
 
             // act
             var actual = _dbOperations.UpdateOrderStatus(orderNumber, newStatus);
@@ -84,7 +88,7 @@ namespace DB_Operations_Tests
         public void DeleteOrder_OrderNumberProvided_OrderIsDeleted()
         {
             // arrange
-            var orderNumber = 4;
+            var orderNumber = 15;
             if (_dbOperations.ReadOrder(orderNumber) == null)
             {
                 throw new ArgumentException($"Order Id = {orderNumber} is not present in the database and cannot be deleted. Please choose another order Id.");

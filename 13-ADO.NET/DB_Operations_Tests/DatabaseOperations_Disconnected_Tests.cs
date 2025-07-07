@@ -1,4 +1,4 @@
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using DB_Operations;
 using DB_Operations.Models;
 using System;
@@ -14,7 +14,7 @@ namespace DB_Operations_Tests
         [SetUp]
         public void Setup()
         {
-            _connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ADONET_Testing;Integrated Security=True;";
+            _connectionString = @"Data Source=EPINHYDW05EF\SQLEXPRESS;Initial Catalog=ADONET_Testing;Integrated Security=True";
             _dbOperations = new DatabaseOperations_Disconnected(_connectionString);
         }
 
@@ -91,7 +91,7 @@ namespace DB_Operations_Tests
         public void DeleteProduct_ProductNumberProvided_ProductIsDeleted()
         {
             // arrange
-            var productId = 2;
+            var productId = 7;
             if (_dbOperations.ReadProduct(productId) == null)
             {
                 throw new ArgumentException($"Product Id = {productId} is not present in the database and cannot be deleted. Please choose another product Id.");

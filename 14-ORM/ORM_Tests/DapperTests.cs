@@ -15,7 +15,7 @@ namespace ORM_Tests
         [SetUp]
         public void Setup()
         {
-            _connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ORM_database;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+            _connectionString = @"Data Source=EPINHYDW05EF\SQLEXPRESS;Initial Catalog=ORM_database;Integrated Security=True";
             _dbOperations = new DapperOperations(_connectionString);
             TruncateDB();
         }
